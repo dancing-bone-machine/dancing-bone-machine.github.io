@@ -22,7 +22,7 @@ Here's what we are going to build:
 Fire up a terminal and clone the git repository. If you haven't heard about git, I suggest you take a look at [this](http://www.codeschool.com/courses/try-git).
 
 ```bash
-$ git clone https://githib.com/dancing-bone-machine/dancing-bone-machine example-app
+$ git clone https://github.com/dancing-bone-machine/dancing-bone-machine example-app
 $ cd example-app
 $ git submodule update --init --recursive
 ```
