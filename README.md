@@ -8,6 +8,6 @@ To run it locally on your system, for previewing changes, type the following com
    $ cd path/to/this/repo
    $ gem install bundle
    $ bundle install
-   $ jeckyll server
+   $ jeckyll server --watch
 
 To publish it, simply push tour changes to [this repository](https://github.com/dancing-bone-machine/dancing-bone-machine.github.io.git) using git.

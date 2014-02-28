@@ -30,6 +30,11 @@ If you don't plan on distributing your application, this setup might be all you 
 
 A set of generator scripts are also included. These allow for creating native applications for several platforms where you can run your application. Currently only iOS is supported, but more platforms are planned: [VST](http://en.wikipedia.org/wiki/Virtual_Studio_Technology) plug-ins, Android, [LV2](http://lv2plug.in/) plug-ins, and [JACK](http://jackaudio.org/) apps for Linux.
 
+### What!?
+
+If none of this makes sense to you, but you still want to make some musical software, head to the [prerequisites section](/prerequisites.html) and spend some time reading the linked resources, you'll be fine when you come back ;)
+
+
 ### Licensing
 
 The Dancing Bone Machine toolkit is licensed under the [GNU Lesser General Public License with a static linking exception](https://github.com/dancing-bone-machine/dancing-bone-machine/blob/master/COPYING). All of the examples are licensed under the [GNU General Public License](http://www.gnu.org/licenses/gpl.html).
