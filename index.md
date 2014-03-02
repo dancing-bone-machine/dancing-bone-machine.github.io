@@ -3,6 +3,30 @@ layout: default
 title: Create music applications with PureData and HTML.
 ---
 
+<p style="color:#F00">
+This website will be restructured into new sections as explained below. Some sections are now complete so go ahead and click.
+</p>
+
+<p style="color:#F00">
+Overview: Very short. What the DBM is about in a nutshell. This section needs to be updated according to the new (easier) way of including DBM into new projects.
+</p>
+
+<p style="color:#F00">
+Prerequisites: Stuff outside of the scope of this documentations that users should know in order to build a successful musical app. Completed.
+</p>
+
+<p style="color:#F00">
+Guide: The "user's manual". A step by step guide that shows users around everything in the toolkit. 
+</p>
+
+<p style="color:#F00">
+Tutorial/Example: Shows how the example application was created in the form of a step by step tutorial.
+</p>
+
+<p style="color:#F00">
+API: A listing of all the JavaScript functions and PureData objects made available by the DBM.
+</p>
+
 ## Overview
 
 The Dancing Bone Machine is a toolkit that allows you to create audio and music applications and plug-ins for different platforms and hosts using [PureData](http://puredata.info) and HTML.
