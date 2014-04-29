@@ -3,61 +3,65 @@ layout: default
 title: Create music applications with PureData and HTML.
 ---
 
-<p style="color:#F00">
-This website will be restructured into new sections as explained below. Some sections are now complete so go ahead and click.
-</p>
-
-<p style="color:#F00">
-Overview: Very short. What the DBM is about in a nutshell. This section needs to be updated according to the new (easier) way of including DBM into new projects.
-</p>
-
-<p style="color:#F00">
-Prerequisites: Stuff outside of the scope of this documentations that users should know in order to build a successful musical app. Completed.
-</p>
-
-<p style="color:#F00">
-Guide: The "user's manual". A step by step guide that shows users around everything in the toolkit. 
-</p>
-
-<p style="color:#F00">
-Tutorial/Example: Shows how the example application was created in the form of a step by step tutorial.
-</p>
-
-<p style="color:#F00">
-API: A listing of all the JavaScript functions and PureData objects made available by the DBM.
-</p>
-
 ## Overview
 
-The Dancing Bone Machine is a toolkit that allows you to create audio and music applications and plug-ins for different platforms and hosts using [PureData](http://puredata.info) and HTML.
+The Dancing Bone Machine is a toolkit that allows you to create audio and music applications for iOS, MacOS and Windows using [PureData](http://puredata.info) and HTML. Linux apps and VST plug-ins are coming soon (see the [roadmap](https://github.com/dancing-bone-machine/dancing-bone-machine/issues/5) for discussion).
 
-**In a nutshell:**
+Here's a short summary of how it works. There are more detailed instructions in the [Guide](/guide.html).
+
+#### 1. Create a DBM project
 
 ``` bash
-$ git clone https://github.com/dancing-bone-machine/dancing-bone-machine.git
-$ cd dancing-bone-machine
+$ mkdir your-project
+$ cd your-project
+$ git init
+$ git submodule add https://github.com/dancing-bone-machine/dancing-bone-machine dbm
 $ git submodule update --init --recursive
-# ...create your awesome PD patches and HTML pages...
-$ scripts/generate-ios-wrapper.sh  
-$ profit
+$ dbm/scripts/create-app.sh
 ```
 
-### Development and debugging workflow that makes sense.
+#### 2. Use the DBM API to connect your JavaScript and PureData code.
+
+In your-project/app/html/index.html:
+
+``` html
+...
+<script src="scripts/dancing-bone-machine/dancing-bone-machine.js" type="text/javascript"></script>
+...
+<button id="btn" type="button" onmouseup="beep();">Beep.</button>
+<script type="text/javascript" charset="utf-8">
+  function beep(e){
+      PD.sendFloat(1, 'volume');
+  }
+</script>
+...
+```
+
+In your-project/app/pd/patches/patch.pd:
+
+<a href="images/simple.pd.png"><img src="images/simple.pd.png" /></a>
+
+#### 3. Test and debug your app with your preferred tools.
  
-You'll be able to run and debug the HTML portions of your app in your favorite [webkit based web browser](http://en.wikipedia.org/wiki/WebKit#Use) while editing and running your PD patch in either [Pure Data](http://puredata.info/downloads/pure-data) or [Pd-extended](http://puredata.info/downloads/pd-extended). Using our simple JavaScript API and a set of PD objects you can establish communication between them without having to run your app in an emulator or any other weird environment.
+You'll be able to run and debug your HTML/JavaScript code in your favorite [webkit based web browser](http://en.wikipedia.org/wiki/WebKit#Use) while editing and running your PD patch in either [Pure Data](http://puredata.info/downloads/pure-data) or [Pd-extended](http://puredata.info/downloads/pd-extended). This is possible thanks to our [[websockets_server]](https://github.com/dancing-bone-machine/dancing-bone-machine/tree/master/library/dancing-bone-machine/pd/externals/src/websocket_server) object in PD.
 
-This is possible thanks to our [[websockets_server]](https://github.com/dancing-bone-machine/dancing-bone-machine/tree/master/library/dancing-bone-machine/pd/externals/src/websocket_server) object in PD.
+If you don't plan on distributing your application, this is all you need.
 
-If you don't plan on distributing your application, this setup might be all you need.
+<iframe src="http://player.vimeo.com/video/93271982" width="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
 
-### Wrap and export
 
-A set of generator scripts are also included. These allow for creating native applications for several platforms where you can run your application. Currently only iOS is supported, but more platforms are planned: [VST](http://en.wikipedia.org/wiki/Virtual_Studio_Technology) plug-ins, Android, [LV2](http://lv2plug.in/) plug-ins, and [JACK](http://jackaudio.org/) apps for Linux.
+#### 4. Export your app using the included scripts.
 
-### What!?
+``` bash
+$ dbm/scripts/create-ios-app.sh
+$ dbm/scripts/create-desktop-app.sh
+```
 
-If none of this makes sense to you, but you still want to make some musical software, head to the [prerequisites section](/prerequisites.html) and spend some time reading the linked resources, you'll be fine when you come back ;)
+You'll get an Xcode or a qmake project you can use to compile your app as a Windows, MacOS or iOS binary.
 
+### More help, please!
+
+If none of this makes sense to you, but you still want to make some musical software, head to the [prerequisites section](/prerequisites.html) and spend some time reading the linked resources, you'll be fine when you come back.
 
 ### Licensing
 
@@ -70,11 +74,14 @@ In other words:
 
 ### Acknowledgements
 
-Dancing Bone Machine uses code from a number of projects, their respective licenses are in the source code.
+Dancing Bone Machine leverages work from a number of projects:
 
 * [libpd](http://libpd.cc/)
+* [QT](http://qt-project.org/)
 * [Apache Cordova](http://cordova.apache.org/)
+* [Webkit](http://webkit.org/)
 * [RequireJS](http://requirejs.org)
 * [libwebsockets](http://libwebsockets.org)
 * [stringencoders](http://code.google.com/p/stringencoders)
+* [MinGW](http://www.mingw.org/)
 

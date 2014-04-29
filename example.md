@@ -3,6 +3,11 @@ layout: default
 title: Tutorial
 ---
 
+<p style="color:#F00">
+Tutorial/Example: Shows how the example application was created in the form of a step by step tutorial.
+</p>
+
+
 ## Tutorial
 
 This tutorial explains how to build a simple synthesizer using the Dancing Bone Machine toolkit. You should be familiarized with using a command line terminal, HTML and JavaScript programming and PureData. If you're not, I suggest you go learn a little bit about them and then come back here. For PureData, I recommend you read the manual at [flossmanuales.net](http://flossmanuals.net/puredata/).

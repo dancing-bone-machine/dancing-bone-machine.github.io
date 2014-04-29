@@ -3,6 +3,10 @@ layout: default
 title: Prerequisites
 ---
 
+<p style="color:#F00">
+Prerequisites: Stuff outside of the scope of this documentations that users should know in order to build a successful musical app. Completed.
+</p>
+
 <span style="font-size:17px;">There's a lot of material here. If you want to skip everything else, take a look at [this](http://www.pd-tutorial.com).</span>
 <hr/>
 
