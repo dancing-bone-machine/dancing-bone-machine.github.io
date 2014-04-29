@@ -3,14 +3,13 @@ layout: default
 title: Prerequisites
 ---
 
-<p style="color:#F00">
-Prerequisites: Stuff outside of the scope of this documentations that users should know in order to build a successful musical app. Completed.
-</p>
-
-<span style="font-size:17px;">There's a lot of material here. If you want to skip everything else, take a look at [this](http://www.pd-tutorial.com).</span>
-<hr/>
-
 ## You should know this stuff first
+
+#### TL;DR
+
+There's a lot of material here. If you want to skip everything else, take a look at [this](http://www.pd-tutorial.com).
+
+<hr>
 
 Although The Dancing Bone Machine toolkit hides a lot of the complexities associated with building musical software, like [real time](http://www.cs.cmu.edu/~rbd/doc/icmc2005workshop/real-time-systems-concepts-design-patterns.p) [constraints](http://www.rossbencina.com/code/real-time-audio-programming-101-time-waits-for-nothing) and cross-platform particularities, there are some basic musical, aesthetic and technical skills you should have in order to successfully design and build musical software. This page is a very brief and incomplete directory of these things with suggestions on where to go and learn about them.
     
