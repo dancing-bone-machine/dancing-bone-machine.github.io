@@ -22,6 +22,14 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* Utils */
+.clear {
+   clear:both;
+}
+
+.left {
+   float:left;
+}
 
 /* Base text styles */
 
@@ -146,7 +154,7 @@ img {
   margin: 0 auto;
   max-width: 650px;
   padding: 5px;
-  margin: 10px 0 32px 0;
+  margin: 0px 10px 10px 0px;
   border: 1px solid #ccc;
 }
 

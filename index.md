@@ -39,7 +39,7 @@ In your-project/app/html/index.html:
 
 In your-project/app/pd/patches/patch.pd:
 
-<a href="images/simple.pd.png"><img src="images/simple.pd.png" /></a>
+![Simple PD Patch](images/simple.pd.png)
 
 #### 3. Test and debug your app with your preferred tools.
  
@@ -47,7 +47,7 @@ You'll be able to run and debug your HTML/JavaScript code in your favorite [webk
 
 If you don't plan on distributing your application, this is all you need.
 
-<iframe src="http://player.vimeo.com/video/93271982" width="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+<iframe src="http://player.vimeo.com/video/93271982" width="500" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
 
 
 #### 4. Export your app using the included scripts.
@@ -69,12 +69,12 @@ The Dancing Bone Machine toolkit is licensed under the [GNU Lesser General Publi
 
 In other words:
 
-* You get the full source code for Dancing Bone Machine. You can examine the code, modify it and share your modified code under the terms of the LGPL.
-* Dancing Bone Machine is safe for use in closed-source applications. The LGPL share-alike terms do not apply to applications built with Dancing Bone Machine. The LGPL applies to Dancing Bone Machine own source code, not your applications.
+* You get the full source code for The Dancing Bone Machine. You can examine the code, modify it and share your modified code under the terms of the LGPL.
+* The Dancing Bone Machine is safe for use in closed-source applications. The LGPL share-alike terms do not apply to applications built with The Dancing Bone Machine. The LGPL applies to The Dancing Bone Machine own source code, not your applications.
 
 ### Acknowledgements
 
-Dancing Bone Machine leverages work from a number of projects:
+The Dancing Bone Machine leverages work from a number of projects:
 
 * [libpd](http://libpd.cc/)
 * [QT](http://qt-project.org/)

@@ -60,7 +60,7 @@ Having said all of the above, not everything should be harmonic or in-key and al
 
 ### <a id="puredata"></a>Find out how to make the sounds you want using code
 
-All right, so we finally arrived to the fun part: how to make all those cool sounds with computer code? There are many ways and the one we integrated into the Dancing Bone Machine is by making PureData programs (they are called patches). The following are some really nice resources for learning how to make sounds and music with PD.
+All right, so we finally arrived to the fun part: how to make all those cool sounds with computer code? There are many ways and the one we integrated into The Dancing Bone Machine is by making PureData programs (they are called patches). The following are some really nice resources for learning how to make sounds and music with PD.
 
 * This is my favorite one and the one you can't miss. The [Programming Electronic Music With PureData](http://www.pd-tutorial.com/) by Johannes Kreidler.
 * The PureData manual at [flossmanuals.net](http://en.flossmanuals.net/pure-data/) has a really neat section on making audio with PD.
