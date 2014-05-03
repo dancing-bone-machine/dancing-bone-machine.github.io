@@ -3,10 +3,6 @@ layout: default
 title: API
 ---
 
-<p style="color:#F00">
-API: A listing of all the JavaScript functions and PureData objects made available by the DBM.
-</p>
-
 ## API
 
 The following JavaScript functions and PureData objects provide a way to communicate your HTML GUIs with your PD patches. The API is heavily based on the [libpd low-level C API](https://github.com/libpd/libpd/wiki/libpd).
