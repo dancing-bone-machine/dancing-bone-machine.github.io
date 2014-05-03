@@ -5,9 +5,9 @@ This is the repository for the [website](http://dancingbonemachine.elsoftwareham
 
 To run it locally on your system, for previewing changes, type the following commands into a terminal and open [http://localhost:4000](http://localhost:4000) in a web browser.
 
-    $ cd path/to/this/repo
-    $ gem install bundle
-    $ bundle install
-    $ jeckyll server
+   $ cd path/to/this/repo
+   $ gem install bundle
+   $ bundle install
+   $ jeckyll server --watch
 
 To publish it, push changes to [this repository](https://github.com/dancing-bone-machine/dancing-bone-machine.github.io.git) using git.

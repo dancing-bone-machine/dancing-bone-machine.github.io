@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="chrome=1">
-      <title>{{ page.title }} | Dancing Bone Machine</title>
+      <title>{{ page.title }} | The Dancing Bone Machine</title>
 
       <link rel="stylesheet" href="stylesheets/styles.css">
       <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -16,21 +16,25 @@
    <body>
       <div class="wrapper">
          <header>
-            <h1 class="header">Dancing Bone Machine</h1>
+            <h1 class="header">The Dancing Bone Machine</h1>
             <p class="header">A programmer's toolkit for building audio and music applications with PureData and HTML.</p>
             <ul>
                <li><a class="buttons" href="./index.html">Overview</a></li>
-               <li><a class="buttons" href="./tutorial.html">Tutorial</a></li>
+               <li><a class="buttons" href="./prerequisites.html">Prerequisites</a></li>
+               <li><a class="buttons" href="./guide.html">Guide</a></li>
+               <li><a class="buttons" href="./example.html">Tutorial</a></li>
                <li><a class="buttons" href="./api.html">API</a></li>
-               <li><a class="buttons" href="https://github.com/dancing-bone-machine/dancing-bone-machine/issues">Discussion & bugs</a></li>
-               <li><a class="buttons" href="https://github.com/dancing-bone-machine">Code</a></li>
+               <li><a class="buttons" href="https://github.com/dancing-bone-machine/dancing-bone-machine/issues" target="_blank">Discussion & bugs</a></li>
+               <li><a class="buttons" href="https://github.com/dancing-bone-machine" target="_blank">Code</a></li>
             </ul>
          </header>
          <section>
             {{ page.content | markdownify }}
          </section>
          <footer>
-            <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+            <p><small>
+                  All content by <a href="mailto:rvega@elsoftwarehamuerto.org">Rafael Vega</a>. Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme.
+            </small></p>
          </footer>
       </div>
       <!--[if !IE]><script>fixScale(document);</script><![endif]-->
