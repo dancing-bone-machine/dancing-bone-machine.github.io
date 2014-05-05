@@ -21,11 +21,15 @@ For the creation of iOS applications, you'll need to install [Xcode](https://dev
 
 You'll also need to install the [QT framework](http://qt-project.org/downloads) on MacOS and/or Windows if you want to create applications for these platforms. On Windows, make sure you download and install the MinGW version of QT.
 
-As mentioned, you'll need [MinGW](http://mingw.org/) if you want to create Windows applications. Download it from [here](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download) and install it. At a certain point in the installation, you will be asked which packages you want to install. Make sure you select mingw-developer-toolkit, mingw32-gcc, mingw32-gcc-g++ and msys. After it's done, create a shortcut to C:\MinGW\msys\1.0\msys.bat somewhere, that's what you'll use to launch the MinGW terminal and create a file called C:\MinGW\mysys\1.0\home/<username>/.profile with the following contents:
+As mentioned, you'll need [MinGW](http://mingw.org/) if you want to create Windows applications. Download it from [here](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download) and install it. At a certain point in the installation, you will be asked which packages you want to install. Make sure you select msys. 
+
+After it's done, create a shortcut to C:\MinGW\msys\1.0\msys.bat somewhere, that's what you'll use to launch the MinGW terminal and create a file called `C:\MinGW\mysys\1.0\home/<username>/.profile` with the following contents:
 
 ```
 export PATH=/c/Qt/Qt5.2.1/5.2.1/mingw48_32/bin:/c/Qt/Qt5.2.1/Tools/mingw48_32/bin:$PATH
 ```
+
+Finally, create a file called `C:\MinGW\msys\1.0\etc\fstab` with a line that reads `C:\Qt\Tools\mingw48_32  /mingw`
 
 ### 1. Getting the toolkit and creating an application.
 
